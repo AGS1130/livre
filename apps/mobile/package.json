@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "name": "mobile",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "3.0.9",
+    "vite-plugin-solid": "2.3.0",
+    "vite-plugin-windicss": "1.8.7"
+  },
+  "dependencies": {
+    "solid-js": "1.5.4"
+  }
+}
