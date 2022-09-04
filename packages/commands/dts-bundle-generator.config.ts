@@ -1,10 +1,8 @@
-import packageJson from './package.json';
-
 export default {
   entries: [
     {
       filePath: "./src/index.ts",
-      outFile: `./dist/${packageJson.name}.d.ts`,
+      outFile: "./dist/index.d.ts",
       noCheck: false
     }
   ]

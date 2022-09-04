@@ -7,6 +7,12 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
   "sideEffects": false,
   "license": "MIT",
   "files": [
@@ -14,7 +20,7 @@
   ],
   "scripts": {
     "dev": "vite --host",
-    "build": "tsc && vite build && dts-bundle-generator --config ./dts-bundle-generator.config.ts",
+    "build": "tsc && vite build && dts-bundle-generator --config ../../dbg.config.ts",
     "clean": "rm -rf node_modules && rm -rf dist",
     "test": "jest",
     "typecheck": "tsc --noEmit"
